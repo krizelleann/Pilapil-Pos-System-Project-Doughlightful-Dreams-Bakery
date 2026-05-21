@@ -1,0 +1,53 @@
+/* 1. Imports the typography styling from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+body { 
+  font-family: 'Plus Jakarta Sans', sans-serif; 
+  scroll-behavior: smooth; 
+}
+
+.font-bakery-script { 
+  font-family: 'Dancing Script', cursive !important; 
+}
+
+.menu-item-title {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-style: italic;
+}
+
+.gradient-bg { 
+  background: linear-gradient(135deg, #ec4899 0%, #f97316 100%); 
+}
+
+@keyframes magicFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+.animate-magic {
+  display: inline-block;
+  animation: magicFloat 3s ease-in-out infinite;
+  position: relative;
+}
+
+.magic-wand-spin { 
+  transition: transform 0.5s ease-in-out; 
+}
+#menu-btn:hover .magic-wand-spin { 
+  transform: rotate(360deg); 
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #fbcfe8;
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #f472b6;
+}
